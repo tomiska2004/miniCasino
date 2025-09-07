@@ -50,6 +50,9 @@ public class SlotMachineService {
     private BigDecimal calculateWin(List<String> symbols, BigDecimal bet) {
         if (symbols.get(0).equals(symbols.get(1)) && symbols.get(1).equals(symbols.get(2))) {
             return bet.multiply(BigDecimal.valueOf(5));
+        }else
+            if (symbols.get(0).equals(symbols.get(1)) || symbols.get(1).equals(symbols.get(2))) {
+            return bet.multiply(BigDecimal.valueOf(0.5));
         }
         return BigDecimal.ZERO;
     }
