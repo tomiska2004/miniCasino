@@ -12,7 +12,7 @@ repositories {
     mavenCentral()
 }
 springBoot {
-    mainClass = 'org.example.SlotMachineApplication'
+    mainClass = 'org.example.CasinoGameApplication'
 }
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'

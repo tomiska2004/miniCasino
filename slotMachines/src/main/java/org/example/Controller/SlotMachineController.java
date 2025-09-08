@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 
 @RestController
 @RequestMapping("/slot")
+@CrossOrigin(origins = "http://localhost:5173")
 public class SlotMachineController {
 
     private final SlotMachineService slotMachineService;
