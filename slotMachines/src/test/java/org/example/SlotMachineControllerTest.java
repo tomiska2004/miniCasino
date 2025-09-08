@@ -25,7 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 //@AutoConfigureMockMvc
 
 
-@WebMvcTest(controllers = SlotMachineController.class)
+@SpringBootTest(classes = CasinoGameApplication.class)
+@AutoConfigureMockMvc
 @ActiveProfiles("test")
 class SlotMachineControllerTest {
 
